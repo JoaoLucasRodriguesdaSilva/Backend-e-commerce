@@ -49,6 +49,5 @@ public class Product {
     @PrePersist
     public void prePersist() {
         if (createdAt == null) createdAt = LocalDateTime.now();
-        if (active == null) active = true;
     }
 }

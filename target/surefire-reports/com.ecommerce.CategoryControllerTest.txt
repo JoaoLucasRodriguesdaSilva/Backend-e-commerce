@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.ecommerce.CategoryControllerTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.799 s -- in com.ecommerce.CategoryControllerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.940 s -- in com.ecommerce.CategoryControllerTest

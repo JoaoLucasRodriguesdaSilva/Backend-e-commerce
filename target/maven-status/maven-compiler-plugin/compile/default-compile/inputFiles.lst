@@ -98,6 +98,7 @@
 /home/runner/work/Backend-e-commerce/Backend-e-commerce/src/main/java/com/ecommerce/controller/ProductController.java
 /home/runner/work/Backend-e-commerce/Backend-e-commerce/src/main/java/com/ecommerce/controller/CartController.java
 /home/runner/work/Backend-e-commerce/Backend-e-commerce/src/main/java/com/ecommerce/dto/SavedCardTokenRequest.java
+/home/runner/work/Backend-e-commerce/Backend-e-commerce/src/main/java/com/ecommerce/enums/WarrantyStatus.java
 /home/runner/work/Backend-e-commerce/Backend-e-commerce/src/main/java/com/ecommerce/dto/InventoryRequest.java
 /home/runner/work/Backend-e-commerce/Backend-e-commerce/src/main/java/com/ecommerce/dto/SessionRequest.java
 /home/runner/work/Backend-e-commerce/Backend-e-commerce/src/main/java/com/ecommerce/enums/AddressType.java

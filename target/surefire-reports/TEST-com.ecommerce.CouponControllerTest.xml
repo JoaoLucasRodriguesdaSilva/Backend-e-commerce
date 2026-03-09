@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.ecommerce.CouponControllerTest" time="1.491" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.ecommerce.CouponControllerTest" time="1.564" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/temurin-17-jdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/runner/work/Backend-e-commerce/Backend-e-commerce/target/surefire/surefirebooter-20260309203417751_3.jar /home/runner/work/Backend-e-commerce/Backend-e-commerce/target/surefire 2026-03-09T20-34-17_669-jvmRun1 surefire-20260309203417751_1tmp surefire_0-20260309203417751_2tmp"/>
+    <property name="sun.java.command" value="/home/runner/work/Backend-e-commerce/Backend-e-commerce/target/surefire/surefirebooter-20260309203742627_3.jar /home/runner/work/Backend-e-commerce/Backend-e-commerce/target/surefire 2026-03-09T20-37-42_551-jvmRun1 surefire-20260309203742627_1tmp surefire_0-20260309203742627_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/runner/work/Backend-e-commerce/Backend-e-commerce/target/test-classes:/home/runner/work/Backend-e-commerce/Backend-e-commerce/target/classes:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-web/3.2.0/spring-boot-starter-web-3.2.0.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter/3.2.0/spring-boot-starter-3.2.0.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot/3.2.0/spring-boot-3.2.0.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/3.2.0/spring-boot-autoconfigure-3.2.0.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-logging/3.2.0/spring-boot-starter-logging-3.2.0.jar:/home/runner/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/home/runner/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/home/runner/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.21.1/log4j-to-slf4j-2.21.1.jar:/home/runner/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/home/runner/.m2/repository/org/slf4j/jul-to-slf4j/2.0.9/jul-to-slf4j-2.0.9.jar:/home/runner/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/runner/.m2/repository/org/yaml/snakeyaml/2.2/snakeyaml-2.2.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-json/3.2.0/spring-boot-starter-json-3.2.0.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.3/jackson-databind-2.15.3.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.3/jackson-annotations-2.15.3.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.3/jackson-core-2.15.3.jar:/home/runner/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.3/jackson-datatype-jdk8-2.15.3.jar:/home/runner/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.15.3/jackson-datatype-jsr310-2.15.3.jar:/home/runner/.m2/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.15.3/jackson-module-parameter-names-2.15.3.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-tomcat/3.2.0/spring-boot-starter-tomcat-3.2.0.jar:/home/runner/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.16/tomcat-embed-core-10.1.16.jar:/home/runner/.m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/10.1.16/tomcat-embed-websocket-10.1.16.jar:/home/runner/.m2/repository/org/springframework/spring-web/6.1.1/spring-web-6.1.1.jar:/home/runner/.m2/repository/org/springframework/spring-beans/6.1.1/spring-beans-6.1.1.jar:/home/runner/.m2/repository/io/micrometer/micrometer-observation/1.12.0/micrometer-observation-1.12.0.jar:/home/runner/.m2/repository/io/micrometer/micrometer-commons/1.12.0/micrometer-commons-1.12.0.jar:/home/runner/.m2/repository/org/springframework/spring-webmvc/6.1.1/spring-webmvc-6.1.1.jar:/home/runner/.m2/repository/org/springframework/spring-aop/6.1.1/spring-aop-6.1.1.jar:/home/runner/.m2/repository/org/springframework/spring-context/6.1.1/spring-context-6.1.1.jar:/home/runner/.m2/repository/org/springframework/spring-expression/6.1.1/spring-expression-6.1.1.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-data-jpa/3.2.0/spring-boot-starter-data-jpa-3.2.0.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-aop/3.2.0/spring-boot-starter-aop-3.2.0.jar:/home/runner/.m2/repository/org/aspectj/aspectjweaver/1.9.20.1/aspectjweaver-1.9.20.1.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-jdbc/3.2.0/spring-boot-starter-jdbc-3.2.0.jar:/home/runner/.m2/repository/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar:/home/runner/.m2/repository/org/springframework/spring-jdbc/6.1.1/spring-jdbc-6.1.1.jar:/home/runner/.m2/repository/org/hibernate/orm/hibernate-core/6.3.1.Final/hibernate-core-6.3.1.Final.jar:/home/runner/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/home/runner/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/home/runner/.m2/repository/org/jboss/logging/jboss-logging/3.5.3.Final/jboss-logging-3.5.3.Final.jar:/home/runner/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/home/runner/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/home/runner/.m2/repository/com/fasterxml/classmate/1.6.0/classmate-1.6.0.jar:/home/runner/.m2/repository/net/bytebuddy/byte-buddy/1.14.10/byte-buddy-1.14.10.jar:/home/runner/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.4/jaxb-runtime-4.0.4.jar:/home/runner/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.4/jaxb-core-4.0.4.jar:/home/runner/.m2/repository/org/eclipse/angus/angus-activation/2.0.1/angus-activation-2.0.1.jar:/home/runner/.m2/repository/org/glassfish/jaxb/txw2/4.0.4/txw2-4.0.4.jar:/home/runner/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.2/istack-commons-runtime-4.1.2.jar:/home/runner/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/runner/.m2/repository/org/antlr/antlr4-runtime/4.10.1/antlr4-runtime-4.10.1.jar:/home/runner/.m2/repository/org/springframework/data/spring-data-jpa/3.2.0/spring-data-jpa-3.2.0.jar:/home/runner/.m2/repository/org/springframework/data/spring-data-commons/3.2.0/spring-data-commons-3.2.0.jar:/home/runner/.m2/repository/org/springframework/spring-orm/6.1.1/spring-orm-6.1.1.jar:/home/runner/.m2/repository/org/springframework/spring-tx/6.1.1/spring-tx-6.1.1.jar:/home/runner/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/home/runner/.m2/repository/org/springframework/spring-aspects/6.1.1/spring-aspects-6.1.1.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-validation/3.2.0/spring-boot-starter-validation-3.2.0.jar:/home/runner/.m2/repository/org/apache/tomcat/embed/tomcat-embed-el/10.1.16/tomcat-embed-el-10.1.16.jar:/home/runner/.m2/repository/org/hibernate/validator/hibernate-validator/8.0.1.Final/hibernate-validator-8.0.1.Final.jar:/home/runner/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/home/runner/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:/home/runner/.m2/repository/org/projectlombok/lombok/1.18.30/lombok-1.18.30.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-starter-test/3.2.0/spring-boot-starter-test-3.2.0.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-test/3.2.0/spring-boot-test-3.2.0.jar:/home/runner/.m2/repository/org/springframework/boot/spring-boot-test-autoconfigure/3.2.0/spring-boot-test-autoconfigure-3.2.0.jar:/home/runner/.m2/repository/com/jayway/jsonpath/json-path/2.8.0/json-path-2.8.0.jar:/home/runner/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.1/jakarta.xml.bind-api-4.0.1.jar:/home/runner/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.2/jakarta.activation-api-2.1.2.jar:/home/runner/.m2/repository/net/minidev/json-smart/2.5.0/json-smart-2.5.0.jar:/home/runner/.m2/repository/net/minidev/accessors-smart/2.5.0/accessors-smart-2.5.0.jar:/home/runner/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/home/runner/.m2/repository/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar:/home/runner/.m2/repository/org/awaitility/awaitility/4.2.0/awaitility-4.2.0.jar:/home/runner/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.1/junit-jupiter-5.10.1.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.1/junit-jupiter-api-5.10.1.jar:/home/runner/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-commons/1.10.1/junit-platform-commons-1.10.1.jar:/home/runner/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.1/junit-jupiter-params-5.10.1.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.1/junit-jupiter-engine-5.10.1.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-engine/1.10.1/junit-platform-engine-1.10.1.jar:/home/runner/.m2/repository/org/mockito/mockito-core/5.7.0/mockito-core-5.7.0.jar:/home/runner/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.10/byte-buddy-agent-1.14.10.jar:/home/runner/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/home/runner/.m2/repository/org/mockito/mockito-junit-jupiter/5.7.0/mockito-junit-jupiter-5.7.0.jar:/home/runner/.m2/repository/org/skyscreamer/jsonassert/1.5.1/jsonassert-1.5.1.jar:/home/runner/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar:/home/runner/.m2/repository/org/springframework/spring-core/6.1.1/spring-core-6.1.1.jar:/home/runner/.m2/repository/org/springframework/spring-jcl/6.1.1/spring-jcl-6.1.1.jar:/home/runner/.m2/repository/org/springframework/spring-test/6.1.1/spring-test-6.1.1.jar:/home/runner/.m2/repository/org/xmlunit/xmlunit-core/2.9.1/xmlunit-core-2.9.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="FILE_LOG_CHARSET" value="UTF-8"/>
     <property name="java.awt.headless" value="true"/>
-    <property name="surefire.real.class.path" value="/home/runner/work/Backend-e-commerce/Backend-e-commerce/target/surefire/surefirebooter-20260309203417751_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/runner/work/Backend-e-commerce/Backend-e-commerce/target/surefire/surefirebooter-20260309203742627_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.18+8"/>
     <property name="user.name" value="runner"/>
@@ -48,7 +48,7 @@
     <property name="user.dir" value="/home/runner/work/Backend-e-commerce/Backend-e-commerce"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="PID" value="5782"/>
+    <property name="PID" value="6722"/>
     <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
     <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
@@ -61,8 +61,8 @@
     <property name="LOGGED_APPLICATION_NAME" value="[ecommerce] "/>
   </properties>
   <testcase name="shouldCreateCoupon" classname="com.ecommerce.CouponControllerTest" time="0.016">
-    <system-out><![CDATA[2026-03-09T20:34:50.159Z  INFO 5782 --- [ecommerce] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.ecommerce.CouponControllerTest]: CouponControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-03-09T20:34:50.160Z  INFO 5782 --- [ecommerce] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.ecommerce.EcommerceApplication for test class com.ecommerce.CouponControllerTest
+    <system-out><![CDATA[2026-03-09T20:38:15.141Z  INFO 6722 --- [ecommerce] [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.ecommerce.CouponControllerTest]: CouponControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-03-09T20:38:15.143Z  INFO 6722 --- [ecommerce] [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.ecommerce.EcommerceApplication for test class com.ecommerce.CouponControllerTest
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -72,18 +72,18 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.0)
 
-2026-03-09T20:34:50.175Z  INFO 5782 --- [ecommerce] [           main] com.ecommerce.CouponControllerTest       : Starting CouponControllerTest using Java 17.0.18 with PID 5782 (started by runner in /home/runner/work/Backend-e-commerce/Backend-e-commerce)
-2026-03-09T20:34:50.175Z  INFO 5782 --- [ecommerce] [           main] com.ecommerce.CouponControllerTest       : No active profile set, falling back to 1 default profile: "default"
-2026-03-09T20:34:50.241Z  INFO 5782 --- [ecommerce] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-03-09T20:34:50.252Z  INFO 5782 --- [ecommerce] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 23 JPA repository interfaces.
-2026-03-09T20:34:50.282Z  INFO 5782 --- [ecommerce] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-03-09T20:34:50.283Z  INFO 5782 --- [ecommerce] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-03-09T20:34:50.285Z  INFO 5782 --- [ecommerce] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-03-09T20:34:50.285Z  INFO 5782 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-45 - Starting...
-2026-03-09T20:34:50.286Z  INFO 5782 --- [ecommerce] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-45 - Added connection conn440: url=jdbc:h2:mem:ecommercedb user=SA
-2026-03-09T20:34:50.286Z  INFO 5782 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-45 - Start completed.
-2026-03-09T20:34:50.287Z  WARN 5782 --- [ecommerce] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-03-09T20:34:50.392Z  INFO 5782 --- [ecommerce] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-09T20:38:15.162Z  INFO 6722 --- [ecommerce] [           main] com.ecommerce.CouponControllerTest       : Starting CouponControllerTest using Java 17.0.18 with PID 6722 (started by runner in /home/runner/work/Backend-e-commerce/Backend-e-commerce)
+2026-03-09T20:38:15.163Z  INFO 6722 --- [ecommerce] [           main] com.ecommerce.CouponControllerTest       : No active profile set, falling back to 1 default profile: "default"
+2026-03-09T20:38:15.229Z  INFO 6722 --- [ecommerce] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-09T20:38:15.238Z  INFO 6722 --- [ecommerce] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 23 JPA repository interfaces.
+2026-03-09T20:38:15.272Z  INFO 6722 --- [ecommerce] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-09T20:38:15.273Z  INFO 6722 --- [ecommerce] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-09T20:38:15.274Z  INFO 6722 --- [ecommerce] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-09T20:38:15.275Z  INFO 6722 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-45 - Starting...
+2026-03-09T20:38:15.275Z  INFO 6722 --- [ecommerce] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-45 - Added connection conn440: url=jdbc:h2:mem:ecommercedb user=SA
+2026-03-09T20:38:15.276Z  INFO 6722 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-45 - Start completed.
+2026-03-09T20:38:15.276Z  WARN 6722 --- [ecommerce] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-09T20:38:15.366Z  INFO 6722 --- [ecommerce] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 Hibernate: drop table if exists address cascade 
 Hibernate: drop table if exists cart cascade 
 Hibernate: drop table if exists cart_item cascade 
@@ -129,7 +129,7 @@ Hibernate: create table shipment (cost numeric(38,2), estimated_days integer, de
 Hibernate: create table support_ticket (created_at timestamp(6), customer_id bigint not null, id bigint generated by default as identity, order_id bigint, channel varchar(255) check (channel in ('CHAT','EMAIL')), status varchar(255) check (status in ('OPEN','IN_PROGRESS','RESOLVED','CLOSED')), subject varchar(255) not null, primary key (id))
 Hibernate: create table technical_specification (id bigint generated by default as identity, product_id bigint not null, spec_key varchar(255) not null, spec_value varchar(255) not null, primary key (id))
 Hibernate: create table variant (extra_price numeric(38,2), id bigint generated by default as identity, product_id bigint not null, attribute varchar(255) not null check (attribute in ('COLOR','STORAGE','VOLTAGE')), variant_sku varchar(255), variant_value varchar(255) not null, primary key (id))
-Hibernate: create table warranty (end_date date, start_date date, id bigint generated by default as identity, order_item_id bigint not null, serial_number varchar(255), status varchar(255), primary key (id))
+Hibernate: create table warranty (end_date date, start_date date, id bigint generated by default as identity, order_item_id bigint not null, serial_number varchar(255), status varchar(255) check (status in ('ACTIVE','EXPIRED','CLAIMED','VOIDED')), primary key (id))
 Hibernate: alter table if exists address add constraint FK93c3js0e22ll1xlu21nvrhqgg foreign key (customer_id) references customer
 Hibernate: alter table if exists cart add constraint FKdebwvad6pp1ekiqy5jtixqbaj foreign key (customer_id) references customer
 Hibernate: alter table if exists cart_item add constraint FK1uobyhgl1wvgt1jpccia8xxs3 foreign key (cart_id) references cart
@@ -154,15 +154,15 @@ Hibernate: alter table if exists support_ticket add constraint FKa3c5j7lab98hrqr
 Hibernate: alter table if exists technical_specification add constraint FKijas8wn079yrnld2jbn5f7ir3 foreign key (product_id) references product
 Hibernate: alter table if exists variant add constraint FKjjpllnln6hk6hj98uesgxno00 foreign key (product_id) references product
 Hibernate: alter table if exists warranty add constraint FK4of1tiln2wuo1r3r03r8ym79x foreign key (order_item_id) references order_item
-2026-03-09T20:34:50.406Z  INFO 5782 --- [ecommerce] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-03-09T20:34:50.532Z  WARN 5782 --- [ecommerce] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-03-09T20:34:50.564Z  INFO 5782 --- [ecommerce] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ecommercedb'
-2026-03-09T20:34:50.569Z  INFO 5782 --- [ecommerce] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2026-03-09T20:34:50.569Z  INFO 5782 --- [ecommerce] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2026-03-09T20:34:50.569Z  INFO 5782 --- [ecommerce] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
-2026-03-09T20:34:50.573Z  INFO 5782 --- [ecommerce] [           main] com.ecommerce.CouponControllerTest       : Started CouponControllerTest in 0.41 seconds (process running for 32.775)
+2026-03-09T20:38:15.378Z  INFO 6722 --- [ecommerce] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-09T20:38:15.494Z  WARN 6722 --- [ecommerce] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-09T20:38:15.528Z  INFO 6722 --- [ecommerce] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ecommercedb'
+2026-03-09T20:38:15.533Z  INFO 6722 --- [ecommerce] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-09T20:38:15.533Z  INFO 6722 --- [ecommerce] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-09T20:38:15.533Z  INFO 6722 --- [ecommerce] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-03-09T20:38:15.537Z  INFO 6722 --- [ecommerce] [           main] com.ecommerce.CouponControllerTest       : Started CouponControllerTest in 0.392 seconds (process running for 32.853)
 Hibernate: insert into coupon (code,current_usage,expires_at,max_usage,minimum_order,type,coupon_value,id) values (?,?,?,?,?,?,?,default)
-2026-03-09T20:34:50.586Z  INFO 5782 --- [ecommerce] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-09T20:38:15.552Z  INFO 6722 --- [ecommerce] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 Hibernate: drop table if exists address cascade 
 Hibernate: drop table if exists cart cascade 
 Hibernate: drop table if exists cart_item cascade 
@@ -186,8 +186,8 @@ Hibernate: drop table if exists support_ticket cascade
 Hibernate: drop table if exists technical_specification cascade 
 Hibernate: drop table if exists variant cascade 
 Hibernate: drop table if exists warranty cascade 
-2026-03-09T20:34:50.588Z  INFO 5782 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-45 - Shutdown initiated...
-2026-03-09T20:34:50.589Z  INFO 5782 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-45 - Shutdown completed.
+2026-03-09T20:38:15.553Z  INFO 6722 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-45 - Shutdown initiated...
+2026-03-09T20:38:15.554Z  INFO 6722 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-45 - Shutdown completed.
 ]]></system-out>
   </testcase>
   <testcase name="shouldGetCouponById" classname="com.ecommerce.CouponControllerTest" time="0.016">
@@ -200,18 +200,18 @@ Hibernate: drop table if exists warranty cascade
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.0)
 
-2026-03-09T20:34:50.599Z  INFO 5782 --- [ecommerce] [           main] com.ecommerce.CouponControllerTest       : Starting CouponControllerTest using Java 17.0.18 with PID 5782 (started by runner in /home/runner/work/Backend-e-commerce/Backend-e-commerce)
-2026-03-09T20:34:50.599Z  INFO 5782 --- [ecommerce] [           main] com.ecommerce.CouponControllerTest       : No active profile set, falling back to 1 default profile: "default"
-2026-03-09T20:34:50.647Z  INFO 5782 --- [ecommerce] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-03-09T20:34:50.655Z  INFO 5782 --- [ecommerce] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 23 JPA repository interfaces.
-2026-03-09T20:34:50.685Z  INFO 5782 --- [ecommerce] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-03-09T20:34:50.686Z  INFO 5782 --- [ecommerce] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-03-09T20:34:50.688Z  INFO 5782 --- [ecommerce] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-03-09T20:34:50.688Z  INFO 5782 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-46 - Starting...
-2026-03-09T20:34:50.690Z  INFO 5782 --- [ecommerce] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-46 - Added connection conn450: url=jdbc:h2:mem:ecommercedb user=SA
-2026-03-09T20:34:50.690Z  INFO 5782 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-46 - Start completed.
-2026-03-09T20:34:50.690Z  WARN 5782 --- [ecommerce] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-03-09T20:34:50.761Z  INFO 5782 --- [ecommerce] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-09T20:38:15.564Z  INFO 6722 --- [ecommerce] [           main] com.ecommerce.CouponControllerTest       : Starting CouponControllerTest using Java 17.0.18 with PID 6722 (started by runner in /home/runner/work/Backend-e-commerce/Backend-e-commerce)
+2026-03-09T20:38:15.564Z  INFO 6722 --- [ecommerce] [           main] com.ecommerce.CouponControllerTest       : No active profile set, falling back to 1 default profile: "default"
+2026-03-09T20:38:15.617Z  INFO 6722 --- [ecommerce] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-09T20:38:15.626Z  INFO 6722 --- [ecommerce] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 23 JPA repository interfaces.
+2026-03-09T20:38:15.660Z  INFO 6722 --- [ecommerce] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-09T20:38:15.661Z  INFO 6722 --- [ecommerce] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-09T20:38:15.663Z  INFO 6722 --- [ecommerce] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-09T20:38:15.663Z  INFO 6722 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-46 - Starting...
+2026-03-09T20:38:15.664Z  INFO 6722 --- [ecommerce] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-46 - Added connection conn450: url=jdbc:h2:mem:ecommercedb user=SA
+2026-03-09T20:38:15.664Z  INFO 6722 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-46 - Start completed.
+2026-03-09T20:38:15.664Z  WARN 6722 --- [ecommerce] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-09T20:38:15.733Z  INFO 6722 --- [ecommerce] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 Hibernate: drop table if exists address cascade 
 Hibernate: drop table if exists cart cascade 
 Hibernate: drop table if exists cart_item cascade 
@@ -257,7 +257,7 @@ Hibernate: create table shipment (cost numeric(38,2), estimated_days integer, de
 Hibernate: create table support_ticket (created_at timestamp(6), customer_id bigint not null, id bigint generated by default as identity, order_id bigint, channel varchar(255) check (channel in ('CHAT','EMAIL')), status varchar(255) check (status in ('OPEN','IN_PROGRESS','RESOLVED','CLOSED')), subject varchar(255) not null, primary key (id))
 Hibernate: create table technical_specification (id bigint generated by default as identity, product_id bigint not null, spec_key varchar(255) not null, spec_value varchar(255) not null, primary key (id))
 Hibernate: create table variant (extra_price numeric(38,2), id bigint generated by default as identity, product_id bigint not null, attribute varchar(255) not null check (attribute in ('COLOR','STORAGE','VOLTAGE')), variant_sku varchar(255), variant_value varchar(255) not null, primary key (id))
-Hibernate: create table warranty (end_date date, start_date date, id bigint generated by default as identity, order_item_id bigint not null, serial_number varchar(255), status varchar(255), primary key (id))
+Hibernate: create table warranty (end_date date, start_date date, id bigint generated by default as identity, order_item_id bigint not null, serial_number varchar(255), status varchar(255) check (status in ('ACTIVE','EXPIRED','CLAIMED','VOIDED')), primary key (id))
 Hibernate: alter table if exists address add constraint FK93c3js0e22ll1xlu21nvrhqgg foreign key (customer_id) references customer
 Hibernate: alter table if exists cart add constraint FKdebwvad6pp1ekiqy5jtixqbaj foreign key (customer_id) references customer
 Hibernate: alter table if exists cart_item add constraint FK1uobyhgl1wvgt1jpccia8xxs3 foreign key (cart_id) references cart
@@ -282,16 +282,16 @@ Hibernate: alter table if exists support_ticket add constraint FKa3c5j7lab98hrqr
 Hibernate: alter table if exists technical_specification add constraint FKijas8wn079yrnld2jbn5f7ir3 foreign key (product_id) references product
 Hibernate: alter table if exists variant add constraint FKjjpllnln6hk6hj98uesgxno00 foreign key (product_id) references product
 Hibernate: alter table if exists warranty add constraint FK4of1tiln2wuo1r3r03r8ym79x foreign key (order_item_id) references order_item
-2026-03-09T20:34:50.771Z  INFO 5782 --- [ecommerce] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-03-09T20:34:50.873Z  WARN 5782 --- [ecommerce] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-03-09T20:34:50.903Z  INFO 5782 --- [ecommerce] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ecommercedb'
-2026-03-09T20:34:50.908Z  INFO 5782 --- [ecommerce] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2026-03-09T20:34:50.908Z  INFO 5782 --- [ecommerce] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2026-03-09T20:34:50.908Z  INFO 5782 --- [ecommerce] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
-2026-03-09T20:34:50.912Z  INFO 5782 --- [ecommerce] [           main] com.ecommerce.CouponControllerTest       : Started CouponControllerTest in 0.321 seconds (process running for 33.114)
+2026-03-09T20:38:15.744Z  INFO 6722 --- [ecommerce] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-09T20:38:15.853Z  WARN 6722 --- [ecommerce] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-09T20:38:15.890Z  INFO 6722 --- [ecommerce] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ecommercedb'
+2026-03-09T20:38:15.897Z  INFO 6722 --- [ecommerce] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-09T20:38:15.897Z  INFO 6722 --- [ecommerce] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-09T20:38:15.897Z  INFO 6722 --- [ecommerce] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-03-09T20:38:15.901Z  INFO 6722 --- [ecommerce] [           main] com.ecommerce.CouponControllerTest       : Started CouponControllerTest in 0.346 seconds (process running for 33.217)
 Hibernate: insert into coupon (code,current_usage,expires_at,max_usage,minimum_order,type,coupon_value,id) values (?,?,?,?,?,?,?,default)
 Hibernate: select c1_0.id,c1_0.code,c1_0.current_usage,c1_0.expires_at,c1_0.max_usage,c1_0.minimum_order,c1_0.type,c1_0.coupon_value from coupon c1_0 where c1_0.id=?
-2026-03-09T20:34:50.927Z  INFO 5782 --- [ecommerce] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-09T20:38:15.915Z  INFO 6722 --- [ecommerce] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 Hibernate: drop table if exists address cascade 
 Hibernate: drop table if exists cart cascade 
 Hibernate: drop table if exists cart_item cascade 
@@ -315,11 +315,11 @@ Hibernate: drop table if exists support_ticket cascade
 Hibernate: drop table if exists technical_specification cascade 
 Hibernate: drop table if exists variant cascade 
 Hibernate: drop table if exists warranty cascade 
-2026-03-09T20:34:50.928Z  INFO 5782 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-46 - Shutdown initiated...
-2026-03-09T20:34:50.929Z  INFO 5782 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-46 - Shutdown completed.
+2026-03-09T20:38:15.917Z  INFO 6722 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-46 - Shutdown initiated...
+2026-03-09T20:38:15.918Z  INFO 6722 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-46 - Shutdown completed.
 ]]></system-out>
   </testcase>
-  <testcase name="shouldReturnEmptyList" classname="com.ecommerce.CouponControllerTest" time="0.01">
+  <testcase name="shouldReturnEmptyList" classname="com.ecommerce.CouponControllerTest" time="0.009">
     <system-out><![CDATA[
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -329,18 +329,18 @@ Hibernate: drop table if exists warranty cascade
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.0)
 
-2026-03-09T20:34:50.939Z  INFO 5782 --- [ecommerce] [           main] com.ecommerce.CouponControllerTest       : Starting CouponControllerTest using Java 17.0.18 with PID 5782 (started by runner in /home/runner/work/Backend-e-commerce/Backend-e-commerce)
-2026-03-09T20:34:50.939Z  INFO 5782 --- [ecommerce] [           main] com.ecommerce.CouponControllerTest       : No active profile set, falling back to 1 default profile: "default"
-2026-03-09T20:34:50.988Z  INFO 5782 --- [ecommerce] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-03-09T20:34:50.997Z  INFO 5782 --- [ecommerce] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 23 JPA repository interfaces.
-2026-03-09T20:34:51.029Z  INFO 5782 --- [ecommerce] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-03-09T20:34:51.030Z  INFO 5782 --- [ecommerce] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-03-09T20:34:51.032Z  INFO 5782 --- [ecommerce] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-03-09T20:34:51.032Z  INFO 5782 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-47 - Starting...
-2026-03-09T20:34:51.033Z  INFO 5782 --- [ecommerce] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-47 - Added connection conn460: url=jdbc:h2:mem:ecommercedb user=SA
-2026-03-09T20:34:51.033Z  INFO 5782 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-47 - Start completed.
-2026-03-09T20:34:51.033Z  WARN 5782 --- [ecommerce] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-03-09T20:34:51.094Z  INFO 5782 --- [ecommerce] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-09T20:38:15.930Z  INFO 6722 --- [ecommerce] [           main] com.ecommerce.CouponControllerTest       : Starting CouponControllerTest using Java 17.0.18 with PID 6722 (started by runner in /home/runner/work/Backend-e-commerce/Backend-e-commerce)
+2026-03-09T20:38:15.931Z  INFO 6722 --- [ecommerce] [           main] com.ecommerce.CouponControllerTest       : No active profile set, falling back to 1 default profile: "default"
+2026-03-09T20:38:15.980Z  INFO 6722 --- [ecommerce] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-09T20:38:15.988Z  INFO 6722 --- [ecommerce] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 23 JPA repository interfaces.
+2026-03-09T20:38:16.032Z  INFO 6722 --- [ecommerce] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-09T20:38:16.034Z  INFO 6722 --- [ecommerce] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-09T20:38:16.036Z  INFO 6722 --- [ecommerce] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-09T20:38:16.036Z  INFO 6722 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-47 - Starting...
+2026-03-09T20:38:16.037Z  INFO 6722 --- [ecommerce] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-47 - Added connection conn460: url=jdbc:h2:mem:ecommercedb user=SA
+2026-03-09T20:38:16.037Z  INFO 6722 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-47 - Start completed.
+2026-03-09T20:38:16.037Z  WARN 6722 --- [ecommerce] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-09T20:38:16.105Z  INFO 6722 --- [ecommerce] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 Hibernate: drop table if exists address cascade 
 Hibernate: drop table if exists cart cascade 
 Hibernate: drop table if exists cart_item cascade 
@@ -386,7 +386,7 @@ Hibernate: create table shipment (cost numeric(38,2), estimated_days integer, de
 Hibernate: create table support_ticket (created_at timestamp(6), customer_id bigint not null, id bigint generated by default as identity, order_id bigint, channel varchar(255) check (channel in ('CHAT','EMAIL')), status varchar(255) check (status in ('OPEN','IN_PROGRESS','RESOLVED','CLOSED')), subject varchar(255) not null, primary key (id))
 Hibernate: create table technical_specification (id bigint generated by default as identity, product_id bigint not null, spec_key varchar(255) not null, spec_value varchar(255) not null, primary key (id))
 Hibernate: create table variant (extra_price numeric(38,2), id bigint generated by default as identity, product_id bigint not null, attribute varchar(255) not null check (attribute in ('COLOR','STORAGE','VOLTAGE')), variant_sku varchar(255), variant_value varchar(255) not null, primary key (id))
-Hibernate: create table warranty (end_date date, start_date date, id bigint generated by default as identity, order_item_id bigint not null, serial_number varchar(255), status varchar(255), primary key (id))
+Hibernate: create table warranty (end_date date, start_date date, id bigint generated by default as identity, order_item_id bigint not null, serial_number varchar(255), status varchar(255) check (status in ('ACTIVE','EXPIRED','CLAIMED','VOIDED')), primary key (id))
 Hibernate: alter table if exists address add constraint FK93c3js0e22ll1xlu21nvrhqgg foreign key (customer_id) references customer
 Hibernate: alter table if exists cart add constraint FKdebwvad6pp1ekiqy5jtixqbaj foreign key (customer_id) references customer
 Hibernate: alter table if exists cart_item add constraint FK1uobyhgl1wvgt1jpccia8xxs3 foreign key (cart_id) references cart
@@ -411,15 +411,15 @@ Hibernate: alter table if exists support_ticket add constraint FKa3c5j7lab98hrqr
 Hibernate: alter table if exists technical_specification add constraint FKijas8wn079yrnld2jbn5f7ir3 foreign key (product_id) references product
 Hibernate: alter table if exists variant add constraint FKjjpllnln6hk6hj98uesgxno00 foreign key (product_id) references product
 Hibernate: alter table if exists warranty add constraint FK4of1tiln2wuo1r3r03r8ym79x foreign key (order_item_id) references order_item
-2026-03-09T20:34:51.103Z  INFO 5782 --- [ecommerce] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-03-09T20:34:51.227Z  WARN 5782 --- [ecommerce] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-03-09T20:34:51.258Z  INFO 5782 --- [ecommerce] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ecommercedb'
-2026-03-09T20:34:51.264Z  INFO 5782 --- [ecommerce] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2026-03-09T20:34:51.264Z  INFO 5782 --- [ecommerce] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2026-03-09T20:34:51.264Z  INFO 5782 --- [ecommerce] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
-2026-03-09T20:34:51.268Z  INFO 5782 --- [ecommerce] [           main] com.ecommerce.CouponControllerTest       : Started CouponControllerTest in 0.337 seconds (process running for 33.47)
+2026-03-09T20:38:16.117Z  INFO 6722 --- [ecommerce] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-09T20:38:16.252Z  WARN 6722 --- [ecommerce] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-09T20:38:16.283Z  INFO 6722 --- [ecommerce] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ecommercedb'
+2026-03-09T20:38:16.288Z  INFO 6722 --- [ecommerce] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-09T20:38:16.288Z  INFO 6722 --- [ecommerce] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-09T20:38:16.289Z  INFO 6722 --- [ecommerce] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-03-09T20:38:16.292Z  INFO 6722 --- [ecommerce] [           main] com.ecommerce.CouponControllerTest       : Started CouponControllerTest in 0.372 seconds (process running for 33.608)
 Hibernate: select c1_0.id,c1_0.code,c1_0.current_usage,c1_0.expires_at,c1_0.max_usage,c1_0.minimum_order,c1_0.type,c1_0.coupon_value from coupon c1_0
-2026-03-09T20:34:51.276Z  INFO 5782 --- [ecommerce] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-09T20:38:16.300Z  INFO 6722 --- [ecommerce] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 Hibernate: drop table if exists address cascade 
 Hibernate: drop table if exists cart cascade 
 Hibernate: drop table if exists cart_item cascade 
@@ -443,11 +443,11 @@ Hibernate: drop table if exists support_ticket cascade
 Hibernate: drop table if exists technical_specification cascade 
 Hibernate: drop table if exists variant cascade 
 Hibernate: drop table if exists warranty cascade 
-2026-03-09T20:34:51.278Z  INFO 5782 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-47 - Shutdown initiated...
-2026-03-09T20:34:51.278Z  INFO 5782 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-47 - Shutdown completed.
+2026-03-09T20:38:16.301Z  INFO 6722 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-47 - Shutdown initiated...
+2026-03-09T20:38:16.302Z  INFO 6722 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-47 - Shutdown completed.
 ]]></system-out>
   </testcase>
-  <testcase name="shouldDeleteCoupon" classname="com.ecommerce.CouponControllerTest" time="0.017">
+  <testcase name="shouldDeleteCoupon" classname="com.ecommerce.CouponControllerTest" time="0.016">
     <system-out><![CDATA[
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -457,18 +457,18 @@ Hibernate: drop table if exists warranty cascade
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.2.0)
 
-2026-03-09T20:34:51.289Z  INFO 5782 --- [ecommerce] [           main] com.ecommerce.CouponControllerTest       : Starting CouponControllerTest using Java 17.0.18 with PID 5782 (started by runner in /home/runner/work/Backend-e-commerce/Backend-e-commerce)
-2026-03-09T20:34:51.289Z  INFO 5782 --- [ecommerce] [           main] com.ecommerce.CouponControllerTest       : No active profile set, falling back to 1 default profile: "default"
-2026-03-09T20:34:51.342Z  INFO 5782 --- [ecommerce] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-03-09T20:34:51.352Z  INFO 5782 --- [ecommerce] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 23 JPA repository interfaces.
-2026-03-09T20:34:51.387Z  INFO 5782 --- [ecommerce] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2026-03-09T20:34:51.388Z  INFO 5782 --- [ecommerce] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2026-03-09T20:34:51.390Z  INFO 5782 --- [ecommerce] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-03-09T20:34:51.390Z  INFO 5782 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-48 - Starting...
-2026-03-09T20:34:51.391Z  INFO 5782 --- [ecommerce] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-48 - Added connection conn470: url=jdbc:h2:mem:ecommercedb user=SA
-2026-03-09T20:34:51.391Z  INFO 5782 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-48 - Start completed.
-2026-03-09T20:34:51.391Z  WARN 5782 --- [ecommerce] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-03-09T20:34:51.464Z  INFO 5782 --- [ecommerce] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-09T20:38:16.311Z  INFO 6722 --- [ecommerce] [           main] com.ecommerce.CouponControllerTest       : Starting CouponControllerTest using Java 17.0.18 with PID 6722 (started by runner in /home/runner/work/Backend-e-commerce/Backend-e-commerce)
+2026-03-09T20:38:16.312Z  INFO 6722 --- [ecommerce] [           main] com.ecommerce.CouponControllerTest       : No active profile set, falling back to 1 default profile: "default"
+2026-03-09T20:38:16.363Z  INFO 6722 --- [ecommerce] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-09T20:38:16.372Z  INFO 6722 --- [ecommerce] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 23 JPA repository interfaces.
+2026-03-09T20:38:16.405Z  INFO 6722 --- [ecommerce] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-09T20:38:16.406Z  INFO 6722 --- [ecommerce] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-09T20:38:16.408Z  INFO 6722 --- [ecommerce] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-09T20:38:16.408Z  INFO 6722 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-48 - Starting...
+2026-03-09T20:38:16.409Z  INFO 6722 --- [ecommerce] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-48 - Added connection conn470: url=jdbc:h2:mem:ecommercedb user=SA
+2026-03-09T20:38:16.409Z  INFO 6722 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-48 - Start completed.
+2026-03-09T20:38:16.409Z  WARN 6722 --- [ecommerce] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-09T20:38:16.484Z  INFO 6722 --- [ecommerce] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
 Hibernate: drop table if exists address cascade 
 Hibernate: drop table if exists cart cascade 
 Hibernate: drop table if exists cart_item cascade 
@@ -514,7 +514,7 @@ Hibernate: create table shipment (cost numeric(38,2), estimated_days integer, de
 Hibernate: create table support_ticket (created_at timestamp(6), customer_id bigint not null, id bigint generated by default as identity, order_id bigint, channel varchar(255) check (channel in ('CHAT','EMAIL')), status varchar(255) check (status in ('OPEN','IN_PROGRESS','RESOLVED','CLOSED')), subject varchar(255) not null, primary key (id))
 Hibernate: create table technical_specification (id bigint generated by default as identity, product_id bigint not null, spec_key varchar(255) not null, spec_value varchar(255) not null, primary key (id))
 Hibernate: create table variant (extra_price numeric(38,2), id bigint generated by default as identity, product_id bigint not null, attribute varchar(255) not null check (attribute in ('COLOR','STORAGE','VOLTAGE')), variant_sku varchar(255), variant_value varchar(255) not null, primary key (id))
-Hibernate: create table warranty (end_date date, start_date date, id bigint generated by default as identity, order_item_id bigint not null, serial_number varchar(255), status varchar(255), primary key (id))
+Hibernate: create table warranty (end_date date, start_date date, id bigint generated by default as identity, order_item_id bigint not null, serial_number varchar(255), status varchar(255) check (status in ('ACTIVE','EXPIRED','CLAIMED','VOIDED')), primary key (id))
 Hibernate: alter table if exists address add constraint FK93c3js0e22ll1xlu21nvrhqgg foreign key (customer_id) references customer
 Hibernate: alter table if exists cart add constraint FKdebwvad6pp1ekiqy5jtixqbaj foreign key (customer_id) references customer
 Hibernate: alter table if exists cart_item add constraint FK1uobyhgl1wvgt1jpccia8xxs3 foreign key (cart_id) references cart
@@ -539,18 +539,18 @@ Hibernate: alter table if exists support_ticket add constraint FKa3c5j7lab98hrqr
 Hibernate: alter table if exists technical_specification add constraint FKijas8wn079yrnld2jbn5f7ir3 foreign key (product_id) references product
 Hibernate: alter table if exists variant add constraint FKjjpllnln6hk6hj98uesgxno00 foreign key (product_id) references product
 Hibernate: alter table if exists warranty add constraint FK4of1tiln2wuo1r3r03r8ym79x foreign key (order_item_id) references order_item
-2026-03-09T20:34:51.473Z  INFO 5782 --- [ecommerce] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-03-09T20:34:51.586Z  WARN 5782 --- [ecommerce] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-03-09T20:34:51.620Z  INFO 5782 --- [ecommerce] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ecommercedb'
-2026-03-09T20:34:51.625Z  INFO 5782 --- [ecommerce] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2026-03-09T20:34:51.625Z  INFO 5782 --- [ecommerce] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2026-03-09T20:34:51.626Z  INFO 5782 --- [ecommerce] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2026-03-09T20:34:51.630Z  INFO 5782 --- [ecommerce] [           main] com.ecommerce.CouponControllerTest       : Started CouponControllerTest in 0.35 seconds (process running for 33.832)
+2026-03-09T20:38:16.493Z  INFO 6722 --- [ecommerce] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-09T20:38:16.635Z  WARN 6722 --- [ecommerce] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-09T20:38:16.678Z  INFO 6722 --- [ecommerce] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:ecommercedb'
+2026-03-09T20:38:16.683Z  INFO 6722 --- [ecommerce] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-03-09T20:38:16.683Z  INFO 6722 --- [ecommerce] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-03-09T20:38:16.683Z  INFO 6722 --- [ecommerce] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2026-03-09T20:38:16.687Z  INFO 6722 --- [ecommerce] [           main] com.ecommerce.CouponControllerTest       : Started CouponControllerTest in 0.384 seconds (process running for 34.002)
 Hibernate: insert into coupon (code,current_usage,expires_at,max_usage,minimum_order,type,coupon_value,id) values (?,?,?,?,?,?,?,default)
 Hibernate: select c1_0.id,c1_0.code,c1_0.current_usage,c1_0.expires_at,c1_0.max_usage,c1_0.minimum_order,c1_0.type,c1_0.coupon_value from coupon c1_0 where c1_0.id=?
 Hibernate: delete from coupon where id=?
 Hibernate: select c1_0.id,c1_0.code,c1_0.current_usage,c1_0.expires_at,c1_0.max_usage,c1_0.minimum_order,c1_0.type,c1_0.coupon_value from coupon c1_0 where c1_0.id=?
-2026-03-09T20:34:51.646Z  INFO 5782 --- [ecommerce] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-09T20:38:16.701Z  INFO 6722 --- [ecommerce] [           main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 Hibernate: drop table if exists address cascade 
 Hibernate: drop table if exists cart cascade 
 Hibernate: drop table if exists cart_item cascade 
@@ -574,8 +574,8 @@ Hibernate: drop table if exists support_ticket cascade
 Hibernate: drop table if exists technical_specification cascade 
 Hibernate: drop table if exists variant cascade 
 Hibernate: drop table if exists warranty cascade 
-2026-03-09T20:34:51.647Z  INFO 5782 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-48 - Shutdown initiated...
-2026-03-09T20:34:51.648Z  INFO 5782 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-48 - Shutdown completed.
+2026-03-09T20:38:16.702Z  INFO 6722 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-48 - Shutdown initiated...
+2026-03-09T20:38:16.703Z  INFO 6722 --- [ecommerce] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-48 - Shutdown completed.
 ]]></system-out>
   </testcase>
 </testsuite>

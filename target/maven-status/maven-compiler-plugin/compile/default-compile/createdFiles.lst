@@ -2,6 +2,7 @@ com/ecommerce/entity/Coupon.class
 com/ecommerce/repository/TechnicalSpecificationRepository.class
 com/ecommerce/dto/SupportTicketResponse.class
 com/ecommerce/dto/PromotionRequest.class
+com/ecommerce/enums/WarrantyStatus.class
 com/ecommerce/service/ReviewService.class
 com/ecommerce/repository/SessionRepository.class
 com/ecommerce/entity/Customer$CustomerBuilder.class

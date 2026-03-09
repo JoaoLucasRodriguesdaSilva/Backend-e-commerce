@@ -1,5 +1,6 @@
 package com.ecommerce.entity;
 
+import com.ecommerce.enums.WarrantyStatus;
 import jakarta.persistence.*;
 import lombok.*;
 import java.time.LocalDate;
@@ -25,5 +26,6 @@ public class Warranty {
 
     private LocalDate endDate;
 
-    private String status;
+    @Enumerated(EnumType.STRING)
+    private WarrantyStatus status;
 }

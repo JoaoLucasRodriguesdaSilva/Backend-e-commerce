@@ -1,5 +1,6 @@
 package com.ecommerce.dto;
 
+import com.ecommerce.enums.WarrantyStatus;
 import java.time.LocalDate;
 
 public record WarrantyRequest(
@@ -7,5 +8,5 @@ public record WarrantyRequest(
     String serialNumber,
     LocalDate startDate,
     LocalDate endDate,
-    String status
+    WarrantyStatus status
 ) {}
