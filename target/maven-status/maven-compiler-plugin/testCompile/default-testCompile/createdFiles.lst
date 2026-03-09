@@ -1,0 +1,11 @@
+com/ecommerce/CouponControllerTest.class
+com/ecommerce/OrderItemControllerTest.class
+com/ecommerce/VariantControllerTest.class
+com/ecommerce/SupportTicketControllerTest.class
+com/ecommerce/OrderControllerTest.class
+com/ecommerce/ShipmentControllerTest.class
+com/ecommerce/ReviewControllerTest.class
+com/ecommerce/ProductControllerTest.class
+com/ecommerce/PaymentControllerTest.class
+com/ecommerce/CustomerControllerTest.class
+com/ecommerce/CategoryControllerTest.class
