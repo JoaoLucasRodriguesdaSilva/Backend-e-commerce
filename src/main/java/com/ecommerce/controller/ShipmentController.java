@@ -3,12 +3,14 @@ package com.ecommerce.controller;
 import com.ecommerce.dto.ShipmentRequest;
 import com.ecommerce.dto.ShipmentResponse;
 import com.ecommerce.service.ShipmentService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Tag(name = "Logistics & Inventory")
 @RestController
 @RequestMapping("/api/shipments")
 @RequiredArgsConstructor

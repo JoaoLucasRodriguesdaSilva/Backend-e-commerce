@@ -3,12 +3,14 @@ package com.ecommerce.controller;
 import com.ecommerce.dto.SupportTicketRequest;
 import com.ecommerce.dto.SupportTicketResponse;
 import com.ecommerce.service.SupportTicketService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Tag(name = "Post-Sales Domain")
 @RestController
 @RequestMapping("/api/support-tickets")
 @RequiredArgsConstructor

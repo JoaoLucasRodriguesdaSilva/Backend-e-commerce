@@ -3,12 +3,14 @@ package com.ecommerce.controller;
 import com.ecommerce.dto.SavedCardTokenRequest;
 import com.ecommerce.dto.SavedCardTokenResponse;
 import com.ecommerce.service.SavedCardTokenService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Tag(name = "Sales Domain")
 @RestController
 @RequestMapping("/api/saved-card-tokens")
 @RequiredArgsConstructor

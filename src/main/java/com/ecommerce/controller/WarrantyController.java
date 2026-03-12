@@ -3,12 +3,14 @@ package com.ecommerce.controller;
 import com.ecommerce.dto.WarrantyRequest;
 import com.ecommerce.dto.WarrantyResponse;
 import com.ecommerce.service.WarrantyService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Tag(name = "Post-Sales Domain")
 @RestController
 @RequestMapping("/api/warranties")
 @RequiredArgsConstructor

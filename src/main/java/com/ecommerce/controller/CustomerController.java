@@ -3,12 +3,14 @@ package com.ecommerce.controller;
 import com.ecommerce.dto.CustomerRequest;
 import com.ecommerce.dto.CustomerResponse;
 import com.ecommerce.service.CustomerService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Tag(name = "Customer Domain")
 @RestController
 @RequestMapping("/api/customers")
 @RequiredArgsConstructor

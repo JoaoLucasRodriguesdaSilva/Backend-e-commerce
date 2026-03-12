@@ -3,12 +3,14 @@ package com.ecommerce.controller;
 import com.ecommerce.dto.PromotionRequest;
 import com.ecommerce.dto.PromotionResponse;
 import com.ecommerce.service.PromotionService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Tag(name = "Marketing Domain")
 @RestController
 @RequestMapping("/api/promotions")
 @RequiredArgsConstructor

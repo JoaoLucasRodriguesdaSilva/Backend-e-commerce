@@ -3,12 +3,14 @@ package com.ecommerce.controller;
 import com.ecommerce.dto.CategoryRequest;
 import com.ecommerce.dto.CategoryResponse;
 import com.ecommerce.service.CategoryService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Tag(name = "Catalog Domain")
 @RestController
 @RequestMapping("/api/categories")
 @RequiredArgsConstructor

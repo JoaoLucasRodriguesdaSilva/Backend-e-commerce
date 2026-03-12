@@ -3,12 +3,14 @@ package com.ecommerce.controller;
 import com.ecommerce.dto.TechnicalSpecificationRequest;
 import com.ecommerce.dto.TechnicalSpecificationResponse;
 import com.ecommerce.service.TechnicalSpecificationService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Tag(name = "Catalog Domain")
 @RestController
 @RequestMapping("/api/technical-specifications")
 @RequiredArgsConstructor
