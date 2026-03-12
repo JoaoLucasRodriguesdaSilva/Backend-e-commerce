@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Tag(name = "Post-Sales Domain")
+@Tag(name = "OrderReturn")
 @RestController
 @RequestMapping("/api/order-returns")
 @RequiredArgsConstructor

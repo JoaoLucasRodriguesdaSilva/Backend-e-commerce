@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Tag(name = "Sales Domain")
+@Tag(name = "CartItem")
 @RestController
 @RequestMapping("/api/cart-items")
 @RequiredArgsConstructor

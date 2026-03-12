@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Tag(name = "Post-Sales Domain")
+@Tag(name = "Warranty")
 @RestController
 @RequestMapping("/api/warranties")
 @RequiredArgsConstructor
