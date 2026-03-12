@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Tag(name = "Catalog Domain")
+@Tag(name = "TechnicalSpecification")
 @RestController
 @RequestMapping("/api/technical-specifications")
 @RequiredArgsConstructor

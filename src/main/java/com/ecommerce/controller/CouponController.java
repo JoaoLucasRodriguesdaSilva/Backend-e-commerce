@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Tag(name = "Marketing Domain")
+@Tag(name = "Coupon")
 @RestController
 @RequestMapping("/api/coupons")
 @RequiredArgsConstructor
