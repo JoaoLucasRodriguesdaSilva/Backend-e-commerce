@@ -12,6 +12,7 @@
 /home/runner/work/Backend-e-commerce/Backend-e-commerce/src/main/java/com/ecommerce/dto/CartItemRequest.java
 /home/runner/work/Backend-e-commerce/Backend-e-commerce/src/main/java/com/ecommerce/repository/CustomerRepository.java
 /home/runner/work/Backend-e-commerce/Backend-e-commerce/src/main/java/com/ecommerce/controller/ProductImageController.java
+/home/runner/work/Backend-e-commerce/Backend-e-commerce/src/main/java/com/ecommerce/config/OpenApiConfig.java
 /home/runner/work/Backend-e-commerce/Backend-e-commerce/src/main/java/com/ecommerce/dto/TechnicalSpecificationResponse.java
 /home/runner/work/Backend-e-commerce/Backend-e-commerce/src/main/java/com/ecommerce/service/AddressService.java
 /home/runner/work/Backend-e-commerce/Backend-e-commerce/src/main/java/com/ecommerce/dto/CategoryResponse.java

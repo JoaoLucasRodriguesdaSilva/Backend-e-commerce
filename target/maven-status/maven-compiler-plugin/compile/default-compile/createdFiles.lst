@@ -86,6 +86,7 @@ com/ecommerce/repository/SavedCardTokenRepository.class
 com/ecommerce/entity/CartItem$CartItemBuilder.class
 com/ecommerce/EcommerceApplication.class
 com/ecommerce/repository/WarrantyRepository.class
+com/ecommerce/config/OpenApiConfig.class
 com/ecommerce/controller/OrderController.class
 com/ecommerce/service/CartService.class
 com/ecommerce/repository/OrderReturnRepository.class
