@@ -3,12 +3,14 @@ package com.ecommerce.controller;
 import com.ecommerce.dto.PaymentRequest;
 import com.ecommerce.dto.PaymentResponse;
 import com.ecommerce.service.PaymentService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Tag(name = "Sales Domain")
 @RestController
 @RequestMapping("/api/payments")
 @RequiredArgsConstructor

@@ -3,12 +3,14 @@ package com.ecommerce.controller;
 import com.ecommerce.dto.SessionRequest;
 import com.ecommerce.dto.SessionResponse;
 import com.ecommerce.service.SessionService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Tag(name = "Customer Domain")
 @RestController
 @RequestMapping("/api/sessions")
 @RequiredArgsConstructor

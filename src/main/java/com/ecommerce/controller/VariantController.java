@@ -3,12 +3,14 @@ package com.ecommerce.controller;
 import com.ecommerce.dto.VariantRequest;
 import com.ecommerce.dto.VariantResponse;
 import com.ecommerce.service.VariantService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Tag(name = "Catalog Domain")
 @RestController
 @RequestMapping("/api/variants")
 @RequiredArgsConstructor

@@ -3,12 +3,14 @@ package com.ecommerce.controller;
 import com.ecommerce.dto.ProductImageRequest;
 import com.ecommerce.dto.ProductImageResponse;
 import com.ecommerce.service.ProductImageService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Tag(name = "Catalog Domain")
 @RestController
 @RequestMapping("/api/images")
 @RequiredArgsConstructor

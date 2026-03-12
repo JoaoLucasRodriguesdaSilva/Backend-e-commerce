@@ -4,8 +4,11 @@ import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.info.License;
+import io.swagger.v3.oas.models.tags.Tag;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
+import java.util.List;
 
 @Configuration
 public class OpenApiConfig {
@@ -22,6 +25,14 @@ public class OpenApiConfig {
                                 .url("https://github.com/JoaoLucasRodriguesdaSilva/Backend-e-commerce"))
                         .license(new License()
                                 .name("MIT License")
-                                .url("https://opensource.org/licenses/MIT")));
+                                .url("https://opensource.org/licenses/MIT")))
+                .tags(List.of(
+                        new Tag().name("Customer Domain"),
+                        new Tag().name("Catalog Domain"),
+                        new Tag().name("Sales Domain"),
+                        new Tag().name("Logistics & Inventory"),
+                        new Tag().name("Marketing Domain"),
+                        new Tag().name("Post-Sales Domain")
+                ));
     }
 }

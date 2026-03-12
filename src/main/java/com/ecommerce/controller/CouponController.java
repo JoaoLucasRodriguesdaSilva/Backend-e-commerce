@@ -3,12 +3,14 @@ package com.ecommerce.controller;
 import com.ecommerce.dto.CouponRequest;
 import com.ecommerce.dto.CouponResponse;
 import com.ecommerce.service.CouponService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Tag(name = "Marketing Domain")
 @RestController
 @RequestMapping("/api/coupons")
 @RequiredArgsConstructor

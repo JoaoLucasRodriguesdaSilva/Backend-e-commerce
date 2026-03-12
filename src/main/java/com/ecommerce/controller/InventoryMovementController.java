@@ -3,12 +3,14 @@ package com.ecommerce.controller;
 import com.ecommerce.dto.InventoryMovementRequest;
 import com.ecommerce.dto.InventoryMovementResponse;
 import com.ecommerce.service.InventoryMovementService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Tag(name = "Logistics & Inventory")
 @RestController
 @RequestMapping("/api/inventory-movements")
 @RequiredArgsConstructor
