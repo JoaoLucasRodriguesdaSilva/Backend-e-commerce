@@ -38,14 +38,25 @@ public class SecurityConfig {
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .exceptionHandling(ex -> ex
                         .authenticationEntryPoint((request, response, authException) ->
-                                response.sendError(HttpServletResponse.SC_UNAUTHORIZED, authException.getMessage())))
+                                response.sendError(HttpServletResponse.SC_UNAUTHORIZED, authException.getMessage()))
+                        .accessDeniedHandler((request, response, accessDeniedException) ->
+                                response.sendError(HttpServletResponse.SC_FORBIDDEN, accessDeniedException.getMessage())))
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(HttpMethod.POST, "/api/auth/register", "/api/auth/login").permitAll()
                         .requestMatchers(
                                 "/swagger-ui/**",
                                 "/swagger-ui.html",
                                 "/v3/api-docs/**").permitAll()
-                        .anyRequest().authenticated()
+                        // USER role: read-only access to catalogue resources
+                        .requestMatchers(HttpMethod.GET,
+                                "/api/categories/**",
+                                "/api/products/**",
+                                "/api/images/**",
+                                "/api/variants/**",
+                                "/api/technical-specifications/**",
+                                "/api/warranties/**").hasAnyRole("USER", "ADMIN")
+                        // All other requests require ADMIN role
+                        .anyRequest().hasRole("ADMIN")
                 )
                 .authenticationProvider(authenticationProvider())
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
