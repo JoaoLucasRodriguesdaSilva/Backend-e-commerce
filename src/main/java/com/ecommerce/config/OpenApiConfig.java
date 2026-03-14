@@ -1,9 +1,12 @@
 package com.ecommerce.config;
 
+import io.swagger.v3.oas.models.Components;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.info.License;
+import io.swagger.v3.oas.models.security.SecurityRequirement;
+import io.swagger.v3.oas.models.security.SecurityScheme;
 import io.swagger.v3.oas.models.tags.Tag;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,7 +19,16 @@ public class OpenApiConfig {
 
     @Bean
     public OpenAPI customOpenAPI() {
+        final String securitySchemeName = "bearerAuth";
         OpenAPI openAPI = new OpenAPI()
+                .addSecurityItem(new SecurityRequirement().addList(securitySchemeName))
+                .components(new Components()
+                        .addSecuritySchemes(securitySchemeName,
+                                new SecurityScheme()
+                                        .name(securitySchemeName)
+                                        .type(SecurityScheme.Type.HTTP)
+                                        .scheme("bearer")
+                                        .bearerFormat("JWT")))
                 .info(new Info()
                         .title("E-commerce API")
                         .version("0.0.1-SNAPSHOT")
@@ -28,6 +40,7 @@ public class OpenApiConfig {
                                 .name("MIT License")
                                 .url("https://opensource.org/licenses/MIT")))
                 .tags(List.of(
+                        new Tag().name("Auth"),
                         new Tag().name("Customer"),
                         new Tag().name("Address"),
                         new Tag().name("Session"),
@@ -54,6 +67,8 @@ public class OpenApiConfig {
                 ));
 
         openAPI.addExtension("x-tagGroups", List.of(
+                Map.of("name", "Authentication",
+                        "tags", List.of("Auth")),
                 Map.of("name", "Customer Domain",
                         "tags", List.of("Customer", "Address", "Session", "SavedCardToken")),
                 Map.of("name", "Catalog Domain",
