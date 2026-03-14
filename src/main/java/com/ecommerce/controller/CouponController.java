@@ -1,5 +1,7 @@
 package com.ecommerce.controller;
 
+import com.ecommerce.dto.CouponApplyRequest;
+import com.ecommerce.dto.CouponApplyResponse;
 import com.ecommerce.dto.CouponRequest;
 import com.ecommerce.dto.CouponResponse;
 import com.ecommerce.service.CouponService;
@@ -26,6 +28,11 @@ public class CouponController {
     @GetMapping("/{id}")
     public CouponResponse findById(@PathVariable Long id) {
         return service.findById(id);
+    }
+
+    @PostMapping("/apply")
+    public CouponApplyResponse apply(@RequestBody CouponApplyRequest dto) {
+        return service.applyCoupon(dto);
     }
 
     @PostMapping

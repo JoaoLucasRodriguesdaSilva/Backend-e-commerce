@@ -54,7 +54,11 @@ public class SecurityConfig {
                                 "/api/images/**",
                                 "/api/variants/**",
                                 "/api/technical-specifications/**",
-                                "/api/warranties/**").hasAnyRole("USER", "ADMIN")
+                                "/api/warranties/**",
+                                "/api/coupons/**",
+                                "/api/promotions/**").hasAnyRole("USER", "ADMIN")
+                        // USER role: apply a coupon to a product
+                        .requestMatchers(HttpMethod.POST, "/api/coupons/apply").hasAnyRole("USER", "ADMIN")
                         // All other requests require ADMIN role
                         .anyRequest().hasRole("ADMIN")
                 )
