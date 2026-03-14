@@ -67,6 +67,44 @@ public class SupportTicketService {
         return toResponse(repository.save(entity));
     }
 
+    public List<SupportTicketResponse> findAllByEmail(String email) {
+        return repository.findByCustomer_Email(email).stream().map(this::toResponse).toList();
+    }
+
+    public SupportTicketResponse findByIdAndEmail(Long id, String email) {
+        return toResponse(repository.findByIdAndCustomer_Email(id, email)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,
+                        "SupportTicket not found: " + id)));
+    }
+
+    @Transactional
+    public SupportTicketResponse createForUser(SupportTicketRequest dto, String email) {
+        Customer customer = customerRepository.findByEmail(email)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,
+                        "Customer not found for current user"));
+        Order order = dto.orderId() != null
+            ? orderRepository.findByIdAndCustomer_Email(dto.orderId(), email)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.FORBIDDEN,
+                        "Order not found or does not belong to the current user"))
+            : null;
+        SupportTicket entity = SupportTicket.builder()
+            .customer(customer)
+            .order(order)
+            .subject(dto.subject())
+            .status(dto.status())
+            .channel(dto.channel())
+            .build();
+        return toResponse(repository.save(entity));
+    }
+
+    @Transactional
+    public void deleteByIdAndEmail(Long id, String email) {
+        repository.findByIdAndCustomer_Email(id, email)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,
+                        "SupportTicket not found: " + id));
+        repository.deleteById(id);
+    }
+
     @Transactional
     public void delete(Long id) {
         getOrThrow(id);

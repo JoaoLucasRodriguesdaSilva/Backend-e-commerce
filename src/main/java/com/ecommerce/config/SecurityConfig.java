@@ -70,6 +70,18 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.POST,
                                 "/api/payments/my",
                                 "/api/order-returns/my").hasAnyRole("USER", "ADMIN")
+                        // USER role: read and manage own customer profile
+                        .requestMatchers(HttpMethod.GET, "/api/customers/my").hasAnyRole("USER", "ADMIN")
+                        .requestMatchers(HttpMethod.POST, "/api/customers/my").hasAnyRole("USER", "ADMIN")
+                        .requestMatchers(HttpMethod.PUT, "/api/customers/my").hasAnyRole("USER", "ADMIN")
+                        // USER role: read and manage own support tickets
+                        .requestMatchers(HttpMethod.GET, "/api/support-tickets/my/**").hasAnyRole("USER", "ADMIN")
+                        .requestMatchers(HttpMethod.POST, "/api/support-tickets/my").hasAnyRole("USER", "ADMIN")
+                        .requestMatchers(HttpMethod.DELETE, "/api/support-tickets/my/**").hasAnyRole("USER", "ADMIN")
+                        // USER role: read all reviews and manage own reviews
+                        .requestMatchers(HttpMethod.GET, "/api/reviews/**").hasAnyRole("USER", "ADMIN")
+                        .requestMatchers(HttpMethod.POST, "/api/reviews/my").hasAnyRole("USER", "ADMIN")
+                        .requestMatchers(HttpMethod.PUT, "/api/reviews/my/**").hasAnyRole("USER", "ADMIN")
                         // All other requests require ADMIN role
                         .anyRequest().hasRole("ADMIN")
                 )

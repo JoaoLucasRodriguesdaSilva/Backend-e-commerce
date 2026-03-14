@@ -66,6 +66,39 @@ public class ReviewService {
     }
 
     @Transactional
+    public ReviewResponse createForUser(ReviewRequest dto, String email) {
+        Product product = productRepository.findById(dto.productId())
+            .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Product not found"));
+        Customer customer = customerRepository.findByEmail(email)
+            .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,
+                    "Customer not found for current user"));
+        Review entity = Review.builder()
+            .product(product)
+            .customer(customer)
+            .rating(dto.rating())
+            .title(dto.title())
+            .comment(dto.comment())
+            .verifiedPurchase(dto.verifiedPurchase())
+            .build();
+        return toResponse(repository.save(entity));
+    }
+
+    @Transactional
+    public ReviewResponse updateByIdAndEmail(Long id, ReviewRequest dto, String email) {
+        Review entity = repository.findByIdAndCustomer_Email(id, email)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,
+                        "Review not found: " + id));
+        Product product = productRepository.findById(dto.productId())
+            .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Product not found"));
+        entity.setProduct(product);
+        entity.setRating(dto.rating());
+        entity.setTitle(dto.title());
+        entity.setComment(dto.comment());
+        entity.setVerifiedPurchase(dto.verifiedPurchase());
+        return toResponse(repository.save(entity));
+    }
+
+    @Transactional
     public void delete(Long id) {
         getOrThrow(id);
         repository.deleteById(id);

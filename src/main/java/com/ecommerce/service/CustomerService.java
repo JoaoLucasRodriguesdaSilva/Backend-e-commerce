@@ -49,6 +49,36 @@ public class CustomerService {
         return toResponse(repository.save(entity));
     }
 
+    public CustomerResponse findByEmail(String email) {
+        return toResponse(repository.findByEmail(email)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,
+                        "Customer not found for current user")));
+    }
+
+    @Transactional
+    public CustomerResponse createForUser(CustomerRequest dto, String email) {
+        Customer entity = Customer.builder()
+            .name(dto.name())
+            .email(email)
+            .taxId(dto.taxId())
+            .phone(dto.phone())
+            .birthDate(dto.birthDate())
+            .build();
+        return toResponse(repository.save(entity));
+    }
+
+    @Transactional
+    public CustomerResponse updateByEmail(String email, CustomerRequest dto) {
+        Customer entity = repository.findByEmail(email)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,
+                        "Customer not found for current user"));
+        entity.setName(dto.name());
+        entity.setTaxId(dto.taxId());
+        entity.setPhone(dto.phone());
+        entity.setBirthDate(dto.birthDate());
+        return toResponse(repository.save(entity));
+    }
+
     @Transactional
     public void delete(Long id) {
         getOrThrow(id);

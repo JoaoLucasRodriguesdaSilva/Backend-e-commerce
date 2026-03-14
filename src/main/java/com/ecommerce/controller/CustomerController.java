@@ -6,6 +6,8 @@ import com.ecommerce.service.CustomerService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,6 +19,24 @@ import java.util.List;
 public class CustomerController {
 
     private final CustomerService service;
+
+    @GetMapping("/my")
+    public CustomerResponse findMy(@AuthenticationPrincipal UserDetails user) {
+        return service.findByEmail(user.getUsername());
+    }
+
+    @PostMapping("/my")
+    @ResponseStatus(HttpStatus.CREATED)
+    public CustomerResponse createMy(@RequestBody CustomerRequest dto,
+                                     @AuthenticationPrincipal UserDetails user) {
+        return service.createForUser(dto, user.getUsername());
+    }
+
+    @PutMapping("/my")
+    public CustomerResponse updateMy(@RequestBody CustomerRequest dto,
+                                     @AuthenticationPrincipal UserDetails user) {
+        return service.updateByEmail(user.getUsername(), dto);
+    }
 
     @GetMapping
     public List<CustomerResponse> findAll() {
