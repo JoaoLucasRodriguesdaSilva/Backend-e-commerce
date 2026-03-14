@@ -56,6 +56,30 @@ public class OrderReturnService {
         return toResponse(repository.save(entity));
     }
 
+    public List<OrderReturnResponse> findAllByEmail(String email) {
+        return repository.findByOrder_Customer_Email(email).stream().map(this::toResponse).toList();
+    }
+
+    public OrderReturnResponse findByIdAndEmail(Long id, String email) {
+        return toResponse(repository.findByIdAndOrder_Customer_Email(id, email)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "OrderReturn not found: " + id)));
+    }
+
+    @Transactional
+    public OrderReturnResponse createForUser(OrderReturnRequest dto, String email) {
+        Order order = orderRepository.findByIdAndCustomer_Email(dto.orderId(), email)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.FORBIDDEN,
+                        "Order not found or does not belong to the current user"));
+        OrderReturn entity = OrderReturn.builder()
+            .order(order)
+            .reason(dto.reason())
+            .status(dto.status())
+            .type(dto.type())
+            .approvedAt(dto.approvedAt())
+            .build();
+        return toResponse(repository.save(entity));
+    }
+
     @Transactional
     public void delete(Long id) {
         getOrThrow(id);

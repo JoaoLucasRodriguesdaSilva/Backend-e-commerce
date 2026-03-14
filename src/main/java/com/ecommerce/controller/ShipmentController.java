@@ -6,6 +6,8 @@ import com.ecommerce.service.ShipmentService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,6 +19,16 @@ import java.util.List;
 public class ShipmentController {
 
     private final ShipmentService service;
+
+    @GetMapping("/my")
+    public List<ShipmentResponse> findMy(@AuthenticationPrincipal UserDetails user) {
+        return service.findAllByEmail(user.getUsername());
+    }
+
+    @GetMapping("/my/{id}")
+    public ShipmentResponse findMyById(@PathVariable Long id, @AuthenticationPrincipal UserDetails user) {
+        return service.findByIdAndEmail(id, user.getUsername());
+    }
 
     @GetMapping
     public List<ShipmentResponse> findAll() {

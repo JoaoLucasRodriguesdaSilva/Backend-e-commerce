@@ -6,6 +6,8 @@ import com.ecommerce.service.ReviewService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,6 +19,19 @@ import java.util.List;
 public class ReviewController {
 
     private final ReviewService service;
+
+    @PostMapping("/my")
+    @ResponseStatus(HttpStatus.CREATED)
+    public ReviewResponse createMy(@RequestBody ReviewRequest dto,
+                                   @AuthenticationPrincipal UserDetails user) {
+        return service.createForUser(dto, user.getUsername());
+    }
+
+    @PutMapping("/my/{id}")
+    public ReviewResponse updateMy(@PathVariable Long id, @RequestBody ReviewRequest dto,
+                                   @AuthenticationPrincipal UserDetails user) {
+        return service.updateByIdAndEmail(id, dto, user.getUsername());
+    }
 
     @GetMapping
     public List<ReviewResponse> findAll() {

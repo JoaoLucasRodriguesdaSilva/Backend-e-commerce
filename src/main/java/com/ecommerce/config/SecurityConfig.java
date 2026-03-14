@@ -38,14 +38,52 @@ public class SecurityConfig {
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .exceptionHandling(ex -> ex
                         .authenticationEntryPoint((request, response, authException) ->
-                                response.sendError(HttpServletResponse.SC_UNAUTHORIZED, authException.getMessage())))
+                                response.sendError(HttpServletResponse.SC_UNAUTHORIZED, authException.getMessage()))
+                        .accessDeniedHandler((request, response, accessDeniedException) ->
+                                response.sendError(HttpServletResponse.SC_FORBIDDEN, accessDeniedException.getMessage())))
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(HttpMethod.POST, "/api/auth/register", "/api/auth/login").permitAll()
                         .requestMatchers(
                                 "/swagger-ui/**",
                                 "/swagger-ui.html",
                                 "/v3/api-docs/**").permitAll()
-                        .anyRequest().authenticated()
+                        // USER role: read-only access to catalogue resources
+                        .requestMatchers(HttpMethod.GET,
+                                "/api/categories/**",
+                                "/api/products/**",
+                                "/api/images/**",
+                                "/api/variants/**",
+                                "/api/technical-specifications/**",
+                                "/api/warranties/**",
+                                "/api/coupons/**",
+                                "/api/promotions/**").hasAnyRole("USER", "ADMIN")
+                        // USER role: apply a coupon to a product
+                        .requestMatchers(HttpMethod.POST, "/api/coupons/apply").hasAnyRole("USER", "ADMIN")
+                        // USER role: access only their own orders and order items (read-only)
+                        .requestMatchers(HttpMethod.GET,
+                                "/api/orders/my/**",
+                                "/api/order-items/my/**",
+                                "/api/shipments/my/**",
+                                "/api/payments/my/**",
+                                "/api/order-returns/my/**").hasAnyRole("USER", "ADMIN")
+                        // USER role: create payments and order returns scoped to their own orders
+                        .requestMatchers(HttpMethod.POST,
+                                "/api/payments/my",
+                                "/api/order-returns/my").hasAnyRole("USER", "ADMIN")
+                        // USER role: read and manage own customer profile
+                        .requestMatchers(HttpMethod.GET, "/api/customers/my").hasAnyRole("USER", "ADMIN")
+                        .requestMatchers(HttpMethod.POST, "/api/customers/my").hasAnyRole("USER", "ADMIN")
+                        .requestMatchers(HttpMethod.PUT, "/api/customers/my").hasAnyRole("USER", "ADMIN")
+                        // USER role: read and manage own support tickets
+                        .requestMatchers(HttpMethod.GET, "/api/support-tickets/my/**").hasAnyRole("USER", "ADMIN")
+                        .requestMatchers(HttpMethod.POST, "/api/support-tickets/my").hasAnyRole("USER", "ADMIN")
+                        .requestMatchers(HttpMethod.DELETE, "/api/support-tickets/my/**").hasAnyRole("USER", "ADMIN")
+                        // USER role: read all reviews and manage own reviews
+                        .requestMatchers(HttpMethod.GET, "/api/reviews/**").hasAnyRole("USER", "ADMIN")
+                        .requestMatchers(HttpMethod.POST, "/api/reviews/my").hasAnyRole("USER", "ADMIN")
+                        .requestMatchers(HttpMethod.PUT, "/api/reviews/my/**").hasAnyRole("USER", "ADMIN")
+                        // All other requests require ADMIN role
+                        .anyRequest().hasRole("ADMIN")
                 )
                 .authenticationProvider(authenticationProvider())
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);

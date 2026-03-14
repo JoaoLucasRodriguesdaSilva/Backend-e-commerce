@@ -58,6 +58,15 @@ public class OrderService {
         return toResponse(repository.save(entity));
     }
 
+    public List<OrderResponse> findAllByEmail(String email) {
+        return repository.findByCustomer_Email(email).stream().map(this::toResponse).toList();
+    }
+
+    public OrderResponse findByIdAndEmail(Long id, String email) {
+        return toResponse(repository.findByIdAndCustomer_Email(id, email)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Order not found: " + id)));
+    }
+
     @Transactional
     public void delete(Long id) {
         getOrThrow(id);
