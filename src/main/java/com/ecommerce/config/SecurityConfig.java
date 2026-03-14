@@ -59,6 +59,17 @@ public class SecurityConfig {
                                 "/api/promotions/**").hasAnyRole("USER", "ADMIN")
                         // USER role: apply a coupon to a product
                         .requestMatchers(HttpMethod.POST, "/api/coupons/apply").hasAnyRole("USER", "ADMIN")
+                        // USER role: access only their own orders and order items (read-only)
+                        .requestMatchers(HttpMethod.GET,
+                                "/api/orders/my/**",
+                                "/api/order-items/my/**",
+                                "/api/shipments/my/**",
+                                "/api/payments/my/**",
+                                "/api/order-returns/my/**").hasAnyRole("USER", "ADMIN")
+                        // USER role: create payments and order returns scoped to their own orders
+                        .requestMatchers(HttpMethod.POST,
+                                "/api/payments/my",
+                                "/api/order-returns/my").hasAnyRole("USER", "ADMIN")
                         // All other requests require ADMIN role
                         .anyRequest().hasRole("ADMIN")
                 )

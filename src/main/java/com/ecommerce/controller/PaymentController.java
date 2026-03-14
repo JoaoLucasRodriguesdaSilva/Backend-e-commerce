@@ -6,6 +6,8 @@ import com.ecommerce.service.PaymentService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,6 +19,22 @@ import java.util.List;
 public class PaymentController {
 
     private final PaymentService service;
+
+    @GetMapping("/my")
+    public List<PaymentResponse> findMy(@AuthenticationPrincipal UserDetails user) {
+        return service.findAllByEmail(user.getUsername());
+    }
+
+    @GetMapping("/my/{id}")
+    public PaymentResponse findMyById(@PathVariable Long id, @AuthenticationPrincipal UserDetails user) {
+        return service.findByIdAndEmail(id, user.getUsername());
+    }
+
+    @PostMapping("/my")
+    @ResponseStatus(HttpStatus.CREATED)
+    public PaymentResponse createMy(@RequestBody PaymentRequest dto, @AuthenticationPrincipal UserDetails user) {
+        return service.createForUser(dto, user.getUsername());
+    }
 
     @GetMapping
     public List<PaymentResponse> findAll() {

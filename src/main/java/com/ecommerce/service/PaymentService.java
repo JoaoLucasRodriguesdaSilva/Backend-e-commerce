@@ -62,6 +62,33 @@ public class PaymentService {
         return toResponse(repository.save(entity));
     }
 
+    public List<PaymentResponse> findAllByEmail(String email) {
+        return repository.findByOrder_Customer_Email(email).stream().map(this::toResponse).toList();
+    }
+
+    public PaymentResponse findByIdAndEmail(Long id, String email) {
+        return toResponse(repository.findByIdAndOrder_Customer_Email(id, email)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Payment not found: " + id)));
+    }
+
+    @Transactional
+    public PaymentResponse createForUser(PaymentRequest dto, String email) {
+        Order order = orderRepository.findByIdAndCustomer_Email(dto.orderId(), email)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.FORBIDDEN,
+                        "Order not found or does not belong to the current user"));
+        Payment entity = Payment.builder()
+            .order(order)
+            .method(dto.method())
+            .status(dto.status())
+            .amount(dto.amount())
+            .installments(dto.installments())
+            .gateway(dto.gateway())
+            .gatewayTransactionId(dto.gatewayTransactionId())
+            .paidAt(dto.paidAt())
+            .build();
+        return toResponse(repository.save(entity));
+    }
+
     @Transactional
     public void delete(Long id) {
         getOrThrow(id);
