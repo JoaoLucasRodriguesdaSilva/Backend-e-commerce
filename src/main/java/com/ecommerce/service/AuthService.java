@@ -3,8 +3,10 @@ package com.ecommerce.service;
 import com.ecommerce.dto.AuthResponse;
 import com.ecommerce.dto.LoginRequest;
 import com.ecommerce.dto.RegisterRequest;
+import com.ecommerce.entity.Customer;
 import com.ecommerce.entity.User;
 import com.ecommerce.enums.Role;
+import com.ecommerce.repository.CustomerRepository;
 import com.ecommerce.repository.UserRepository;
 import com.ecommerce.security.JwtTokenProvider;
 import lombok.RequiredArgsConstructor;
@@ -22,6 +24,7 @@ import org.springframework.web.server.ResponseStatusException;
 public class AuthService {
 
     private final UserRepository userRepository;
+    private final CustomerRepository customerRepository;
     private final PasswordEncoder passwordEncoder;
     private final JwtTokenProvider tokenProvider;
     private final AuthenticationManager authenticationManager;
@@ -38,6 +41,16 @@ public class AuthService {
                 .role(Role.USER)
                 .build();
         userRepository.save(user);
+
+        Customer customer = Customer.builder()
+                .name(request.name())
+                .email(request.email())
+                .taxId(request.taxId())
+                .phone(request.phone())
+                .birthDate(request.birthDate())
+                .build();
+        customerRepository.save(customer);
+
         String token = tokenProvider.generateToken(user);
         return new AuthResponse(token, user.getEmail(), user.getName());
     }
